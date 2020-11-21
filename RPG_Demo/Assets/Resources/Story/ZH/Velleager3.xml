@@ -1,0 +1,23 @@
+<story>
+    <if (toy<1)>
+        <l by="v3" title="Old lady" set("v3talk"=0)>Drive slow, watch your kid, danger is everywhere.</l>
+        <select >
+            <opt >You are too serious.</opt>
+            <opt> Sure, thanks.</opt>
+            <opt>Old lady is talking nonsense again.</opt>
+        </select>
+
+        <l by="v3" title="Old lady">Safe is someting we don't care till it's gone.</l>
+
+    </if>
+    <if(toy\>0) && (v3talk==0)>
+        <l by="Mom" title="Mom"> Do you have any candy?</l>
+        <l by="v3" title="Old lady" set("candy"=$[candy]+1) set("v3talk"=1)>Take it.</l>
+        <l by="Mom" title="Mom"> Thanks lady, Now I have got $[candy] candy.</l>
+    </if>
+
+    <if(candy\>=1)>
+        <l by="v3" title="Old lady" >Take care.</l>
+    </if>
+
+</story>

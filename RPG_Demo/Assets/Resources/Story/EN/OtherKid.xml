@@ -1,0 +1,11 @@
+<Story>
+    <if(toy<1) && (start==1)>
+        <l by="Mom" title="Mom"> Hey,kid. Could you give back me my son's toy? He need that today.</l>
+        <l by="OtherKid" title="Kid"> again?</l>
+        <l  disable(Toy1) set("toy"=1) set("candy"=0) >Sure, why not</l>
+        <l>I miss playing with Jack. When Can I see him again?</l>
+        <l by="Mom" title="Mom"> Soon.</l>
+        <l>We won't take too long.</l>
+    </if>
+    <l by="OtherKid" title="Kid"> Byebye.</l>
+</Story>

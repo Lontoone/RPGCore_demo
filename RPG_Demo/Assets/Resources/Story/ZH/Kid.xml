@@ -1,0 +1,40 @@
+See github for more information.
+<Story>
+<if(start==0)>
+    <l by="Kid" title="Kid"  >Hi, 媽媽!</l>
+    <l animation(Kid,Happy) effect(shake)>今天是野餐日!!!!</l>
+    <l by="Mom" title="Mom"> 是的，小寶貝</l>
+    <l by="Kid" title="Kid"  animation(Kid,Idle)>但你能幫我找到我的小熊玩偶嗎?</l>
+    <l by="Mom" title="Mom" set("start"=1)> 當然，讓我看看。</l>
+ </if>
+
+<if(toy==1) >
+    剛拿到toy
+    <if(candy==0)>
+        <l by="Kid" title="Kid"  enable(Toy2) >哈哈! 小熊先生你是逃不出我的手掌心的。</l>
+        <l>謝了! 老媽</l>
+        <l by="Mom" title="Mom"> 沒問題</l>
+        <l by="Kid" title="Kid"  >喔喔，還有一件事 </l>
+        <l by="Kid" title="Kid"  >野餐需要食物</l>
+        <l by="Kid" title="Kid"  >如果有足夠的食物，我們就不會挨餓!</l>
+        <l by="Kid" title="Kid"  >所以媽媽妳能幫我找糖果麻?</l>
+        <l> 我想5個就差不多了</l>
+    </if>
+
+    <if(candy<4) && (candy\>1)>
+        <l by="Mom" title="Mom"> 天心，我只有$[candy] 個糖果</l>
+        <l by="Kid" title="Kid"  >那還不夠!</l>
+        <l by="Kid" title="Kid"  >去問問看更多人</l>
+        <l by="Mom" title="Mom"> 當然，我的寶貝</l>
+    </if>
+    <if(candy==4)>
+        <l by="Kid" title="Kid"  >只有4個? 好吧</l>
+        <l by="Kid" title="Kid"  >應該夠了.</l>
+        <l by="Kid" title="Kid"  >Let's go!</l>
+        <l changeScene(End)></l>
+
+    </if>
+
+</if>
+
+</Story>

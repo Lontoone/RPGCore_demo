@@ -1,0 +1,27 @@
+<story>
+    <if (toy<1)>
+        <l by="v1" title="Hank" set("v1talk"=0)>這是中文，我有點懶的翻譯</l>
+        <select >
+            <opt set("temp_t"=1)>We checked the weather forecast, it will be fine.</opt>
+            <opt set("temp_t"=2)>I promised my son.</opt>
+        </select>
+
+        <if(temp_t==1)>
+            <l by="v1" title="Hank"> Hope so.</l>
+        </if>
+        <if(temp_t==2)>
+            <l by="v1" title="Hank" >Promise can be changed sometimes.</l>
+        </if>
+        <l by="v1" title="Hank" >Good luck.</l>
+    </if>
+    <if(toy\>0) && (v1talk==0)>
+        <l by="Mom" title="Mom"> Hi,sir. Do you have any candy left?</l>
+        <l by="v1" title="Hank" set("candy"=$[candy]+1) set("v1talk"=1)> Sure, I have 1 candy. Here you are.</l>
+        <l by="Mom" title="Mom"> Thanks sir, Now I have got $[candy] candy.</l>
+    </if>
+
+    <if(candy\>=1)>
+        <l by="v1" title="Hank" >Good luck.</l>
+    </if>
+
+</story>

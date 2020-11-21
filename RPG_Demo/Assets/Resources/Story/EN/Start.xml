@@ -1,0 +1,6 @@
+<Story>
+<l by="Mom" title="Mom" set("start"=0) set("toy"=0) > I have to take the boy to a picnic.</l>
+<l>It will be a lot of fun.</l>
+<l>...</l>
+<l changeScene(GameScene)></l>
+</Story>

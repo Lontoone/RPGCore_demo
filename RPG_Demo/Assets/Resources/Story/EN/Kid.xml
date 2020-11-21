@@ -1,0 +1,40 @@
+See github for more information.
+<Story >
+<if(start==0)>
+    <l by="Kid" title="Kid"  >Hi, mom!</l>
+    <l animation(Kid,Happy) effect(shake)>It's picnic day!!!!</l>
+    <l by="Mom" title="Mom"> Yes, My dear.</l>
+    <l by="Kid" title="Kid"  animation(Kid,Idle)>But before we go, can you pick up Mr.Bear for me?</l>
+    <l by="Mom" title="Mom" set("start"=1)> Sure, let me see where is Mr.Bear hiding.</l>
+ </if>
+
+<if(toy==1) >
+    剛拿到toy
+    <if(candy==0)>
+        <l by="Kid" title="Kid"  enable(Toy2) >Ha! Mr.Bear, you can't hide forever.</l>
+        <l>Thanks! mom.</l>
+        <l by="Mom" title="Mom"> No problem.</l>
+        <l by="Kid" title="Kid"  >Oh! one more thing. </l>
+        <l by="Kid" title="Kid"  >Picnic needs food!</l>
+        <l by="Kid" title="Kid"  >If we don't have food, we will starving in the wild!</l>
+        <l by="Kid" title="Kid"  >So,mom! Can you please find some candies for me?</l>
+        <l> I think 5 is enough! ha.</l>
+    </if>
+
+    <if(candy<4) && (candy\>1)>
+        <l by="Mom" title="Mom"> Sweet heart, I have $[candy] candy for you.</l>
+        <l by="Kid" title="Kid"  >That's not enough!</l>
+        <l by="Kid" title="Kid"  >Ask more people for candy, please.</l>
+        <l by="Mom" title="Mom"> Sure, sweet heart.</l>
+    </if>
+    <if(candy==4)>
+        <l by="Kid" title="Kid"  >only four? fin.</l>
+        <l by="Kid" title="Kid"  >I think that is enough for our trip.</l>
+        <l by="Kid" title="Kid"  >Let's go!</l>
+        <l changeScene(End)></l>
+
+    </if>
+
+</if>
+
+</Story>

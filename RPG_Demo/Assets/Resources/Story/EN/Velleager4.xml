@@ -1,0 +1,16 @@
+<story>
+    <if (toy<1)>
+        <l by="v4" title="Old man">Listen to what old lady says.</l>
+        <l by="v4" title="Old man" set("v4talk"=0)>She is right about everything.</l>
+    </if>
+    <if(toy\>0) && (v4talk==0)>
+        <l by="Mom" title="Mom"> Do you have any candy?</l>
+        <l by="v4" title="Old man" set("candy"=$[candy]+1) set("v4talk"=1)>Sure. One for your lovely boy.</l>
+        <l by="Mom" title="Mom"> Thanks, Now I have got $[candy] candy.</l>
+    </if>
+
+    <if(candy\>=1)>
+        <l by="v4" title="Old man" >Take care.</l>
+    </if>
+
+</story>

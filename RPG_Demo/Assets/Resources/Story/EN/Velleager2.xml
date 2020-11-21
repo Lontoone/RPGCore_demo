@@ -1,0 +1,29 @@
+<story>
+    <if (toy<1)>
+        <l by="v2" title="Ann" set("v2talk"=0)>Picnic? I love picnic!</l>
+        <select >
+            <opt set("temp_t"=1)>Sure, next time.</opt>
+            <opt set("temp_t"=2>Everyone loves picnic</opt>
+            <opt>....</opt>
+        </select>
+
+        <if(temp_t==1)>
+            <l by="v2" title="Ann">Maybe there is not "next time".</l>
+        </if>
+        <if(temp_t==2)>
+            <l by="v2" title="Ann" >U R right!</l>
+        </if>
+
+        <l by="v2" title="Ann" >bye~</l>
+    </if>
+    <if(toy\>0) && (v2talk==0)>
+        <l by="Mom" title="Mom"> Do you have any candy?</l>
+        <l by="v2" title="Ann" set("candy"=$[candy]+1) set("v2talk"=1)> Sure, I have 1 candy for your cute little boy.</l>
+        <l by="Mom" title="Mom"> Thanks Ann, Now I have got $[candy] candy.</l>
+    </if>
+
+    <if(candy\>1)>
+        <l by="v2" title="Ann" >I am waiting for your next picnic!</l>
+    </if>
+
+</story>
