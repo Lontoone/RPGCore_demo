@@ -1,6 +1,4 @@
 
-
-
 The main part are `RPG Core.cs`, `StoryReader.cs` ,`OptionButton.cs`.
 This tool is still in testing.
 
@@ -12,7 +10,7 @@ Example
 
 # How to use
 
-Check out [this demo project.](https://github.com/Lontoone/RPGCore_demo) or watch the [demo video](https://youtu.be/urDFmhzHlts).
+Check out [this demo project.(unity version 2020.1.1f1)](https://github.com/Lontoone/RPGCore_demo) or watch the [demo video](https://youtu.be/urDFmhzHlts).
 All the story condition checks are done by this tool [(example)](https://github.com/Lontoone/RPGCore_demo/blob/master/RPG_Demo/Assets/Resources/Story/EN/Kid.xml), other scripts only deal with player movement.
 
 I use .xml as file extension only because it is easier to edit on vscode.
@@ -227,4 +225,4 @@ Asign your defult lanuage dialog text file to ```TextAsset text```. While conver
 
 ---
 
-see other at [Lontoone](https://github.com/Lontoone)
+see others at [Lontoone](https://github.com/Lontoone)
