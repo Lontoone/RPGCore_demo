@@ -161,6 +161,9 @@ WON'T WORK
 <l> temp_a = "temp_a"</l>
 ```
 
+### enable| disable (obj1,obj2,obj3....)
+Enable or disable gameobjects. 
+
 ---
 
 ### Other
