@@ -1,3 +1,6 @@
+see other at [Lontoone](https://github.com/Lontoone)
+
+
 The main part are `RPG Core.cs`, `StoryReader.cs` ,`OptionButton.cs`.
 This tool is still in testing.
 
