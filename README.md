@@ -1,4 +1,4 @@
-see other at [Lontoone](https://github.com/Lontoone)
+
 
 
 The main part are `RPG Core.cs`, `StoryReader.cs` ,`OptionButton.cs`.
@@ -223,3 +223,8 @@ Contains regexs , in charge of spliting nesting tags and other basic funtions.
  # Story Trigger.cs:
  
 Asign your defult lanuage dialog text file to ```TextAsset text```. While converstation start, it will find the file with same name as `text` under other `lang` folder.
+
+
+---
+
+see other at [Lontoone](https://github.com/Lontoone)
