@@ -40,7 +40,7 @@ Example
 
     <if(temp_a ==1)||(temp_a ==1)></if>
     
-    <if (temp_a<=1) && (temp_b==2) && (temp_b\>=2) && (temp_a!=1)>
+    <if (temp_a<=1) && (temp_b==2) && (temp_b\>=2) && (temp_a!=1)></if>
     
     <if(temp_a ==1)></if>
 ```
