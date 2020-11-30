@@ -8,6 +8,7 @@ Example
 
 ![Preview gif](https://i.imgur.com/znRKfdU.gif)
 
+
 # How to use
 
 Check out [this demo project.(unity version 2020.1.1f1)](https://github.com/Lontoone/RPGCore_demo) or watch the [demo video](https://youtu.be/urDFmhzHlts).
@@ -116,7 +117,7 @@ img(left,"img1")
 img(middle,'img2')
 img(right,/imgfolder/img1)
 ```
-If you are using the style that similar to Janapens galgame, use it to load the picture under `Resources` folider and define which position to place. left,middle and right are just image variables in `StoryReader.cs`.
+If you are using the style that similar to Japaneses game, use it to load the picture under `Resources` folider and define which position to place. left,middle and right are just image variables in `StoryReader.cs`. [previous preview](https://youtu.be/D3n15abGHgg)
 
 
 ---
