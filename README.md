@@ -117,7 +117,7 @@ img(left,"img1")
 img(middle,'img2')
 img(right,/imgfolder/img1)
 ```
-If you are using the style that similar to Japaneses game, use it to load the picture under `Resources` folider and define which position to place. left,middle and right are just image variables in `StoryReader.cs`. [previous preview](https://youtu.be/D3n15abGHgg)
+If you are using the style that similar to Japaneses game, use it to load the picture under `Resources` folider and define which position to place. left,middle and right are just image variables in `StoryReader.cs`. [previous demo](https://youtu.be/D3n15abGHgg)
 
 
 ---
