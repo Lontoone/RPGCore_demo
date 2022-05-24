@@ -41,7 +41,7 @@ Example
 
     <if(temp_a ==1)||(temp_a ==1)></if>
     
-    <if (temp_a<=1) && (temp_b==2) && (temp_b\>=2) && (temp_a!=1)></if>
+    <if (temp_a<=1) && (temp_b==2) && (temp_b>=2) && (temp_a!=1)></if>
     
     <if(temp_a ==1)></if>
 ```
@@ -119,6 +119,14 @@ img(right,/imgfolder/img1)
 ```
 If you are using the style that similar to Japaneses game, use it to load the picture under `Resources` folider and define which position to place. left,middle and right are just image variables in `StoryReader.cs`. [previous demo](https://youtu.be/D3n15abGHgg)
 
+---
+
+### init
+```
+EXAMPLE
+        <l init("para"=0)> </l>
+```
+Init or reset a variable.
 
 ---
 
